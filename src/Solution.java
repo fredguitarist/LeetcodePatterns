@@ -19,7 +19,6 @@ class Solution {
     }
 
     public boolean isPalindrome(int x) {
-//        System.out.println(Integer.toString(x));
         String str = String.valueOf(x);
         int j = 0;
         boolean bool=false;
@@ -27,16 +26,19 @@ class Solution {
              bool = true; }
         else {
                  for (int i = 0; i < str.length() / 2; i++) {
-//                     System.out.println(str.charAt(i));
-//                     System.out.println(str.charAt(str.length() - 1 - i));
                      if (str.charAt(i) != str.charAt(str.length() - 1 - i))
                      {break;}
                      j+=1;
                      }
-
                  }
         if (j == str.length()/2)
             {bool = true;}
     return bool;
     }
+
+    public boolean isValid(String str) {
+        boolean flag = true;
+        if (str.indexOf("(") != str.indexOf(")") + 1) {
+            }
+        }
 }
