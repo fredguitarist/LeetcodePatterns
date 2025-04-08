@@ -36,9 +36,16 @@ class Solution {
     return bool;
     }
 
-    public boolean isValid(String str) {
-        boolean flag = true;
-        if (str.indexOf("(") != str.indexOf(")") + 1) {
-            }
-        }
-}
+//    public boolean isValid(String str) {
+//        boolean flag = true;
+//        for (int i = 0; i < str.length() - 1; i++) {
+//            if ((str.charAt(i) == '(' && str.charAt(i + 1) == ')') || (str.charAt(i) == '[' && str.charAt(i + 1) == ']') || (str.charAt(i) == '{' && str.charAt(i + 1) == '}')) {
+//                flag = true;
+//            } else {
+//                flag = false;
+//            }
+//        }
+//
+//        return flag;
+//        }
+    }
