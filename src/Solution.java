@@ -99,18 +99,18 @@ class Solution {
         int numRows = board.length; // Количество строк
         int numCols = board[0].length; // Количество столбцов (предполагаем, что все строки имеют одинаковую длину)
 
-        for (int i = 0; i < numRows; i++) {
-            Set<Character> seen = new HashSet<>();
-            for (int j = 0; j < numCols; j++) {
-                char value = board[i][j];
+        for (int i = 0; i < numRows; i++) { //идти по рядам
+            Set<Character> seen = new HashSet<>(); //использовать хэшсет
+            for (int j = 0; j < numCols; j++) { //идти по колонкам
+                char value = board[i][j]; //записывать элемент в переменную
                 if (value == '.') {
                     continue; // пропускаем точки
                 }
-                if (seen.contains(value)) {
+                if (seen.contains(value)) { //если уже содержит переменную
                     System.out.println("повтор");
                     return false; // повтор
                 }
-                seen.add(value);
+                seen.add(value); //если не содержит добавить
             }
         }
         System.out.println("все строки уникальны");

@@ -24,6 +24,5 @@ public class Main {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
         };
         solution.isValidSudoku(sudokuGrid);
-
     }
 }
