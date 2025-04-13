@@ -107,7 +107,7 @@ class Solution {
                     continue; // пропускаем точки
                 }
                 if (seen.contains(value)) { //если уже содержит переменную
-                    System.out.println("повтор");
+                    System.out.println("повтор в строке");
                     return false; // повтор
                 }
                 seen.add(value); //если не содержит добавить
@@ -115,5 +115,34 @@ class Solution {
         }
         System.out.println("все строки уникальны");
         return true; // все строки уникальны
+        //пока забил доделывать
+    }
+
+    public int removeElement(int[] nums, int val) {
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != val) {j++;}
+        }
+        return j;
+    }
+
+    public int lengthOfLastWord(String s) { //58
+        boolean flag = false;
+        int count = 0;
+        if (s.length() != 1) {
+            for (int i = s.length() - 1; i != 0; i--) {
+                if (s.charAt(i) != ' ') {
+                    count++;
+                    flag = true;
+                }
+                if (flag && s.charAt(i) == ' ') {
+                    break;
+                }
+            }
+        }
+        else {
+            count = 1;
+        }
+        return count;
     }
 }
