@@ -126,11 +126,11 @@ class Solution {
         return j;
     }
 
-    public int lengthOfLastWord(String s) { //58
+    public int lengthOfLastWord(String s) {
         boolean flag = false;
         int count = 0;
-        if (s.length() != 1) {
-            for (int i = s.length() - 1; i != 0; i--) {
+
+            for (int i = s.length() - 1; i >= 0 ; i--) {
                 if (s.charAt(i) != ' ') {
                     count++;
                     flag = true;
@@ -139,10 +139,8 @@ class Solution {
                     break;
                 }
             }
-        }
-        else {
-            count = 1;
-        }
+
+        System.out.println(count);
         return count;
+        }
     }
-}

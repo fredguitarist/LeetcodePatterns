@@ -25,6 +25,6 @@ public class Main {
 //        };
 //        solution.isValidSudoku(sudokuGrid);
 //        solution.removeElement(new int[]{3,2,2,3}, 3);
-        solution.lengthOfLastWord("ыh");
+        solution.lengthOfLastWord("a a");
     }
 }
