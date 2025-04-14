@@ -25,6 +25,8 @@ public class Main {
 //        };
 //        solution.isValidSudoku(sudokuGrid);
 //        solution.removeElement(new int[]{3,2,2,3}, 3);
-        solution.lengthOfLastWord("a a");
+//        solution.lengthOfLastWord("a a");
+
+        System.out.println(solution.simplifyPath("/home/user/./Documents/../Pictures"));
     }
 }

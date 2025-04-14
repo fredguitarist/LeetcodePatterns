@@ -93,8 +93,6 @@ class Solution {
     }
 
     public boolean isValidSudoku(char[][] board) {
-
-//        System.out.println(board[0][0]);
         ArrayList<Integer> list = new ArrayList<>();
         int numRows = board.length; // Количество строк
         int numCols = board[0].length; // Количество столбцов (предполагаем, что все строки имеют одинаковую длину)
@@ -139,8 +137,19 @@ class Solution {
                     break;
                 }
             }
-
-        System.out.println(count);
         return count;
+        }
+
+    public String simplifyPath(String path) {//71
+        String[] parts = path.split("/");
+        String result = "/";
+        for (int i = 0; i < parts.length; i++) {
+            if (!parts[i].isEmpty() && !parts[i].equals("..") && !parts[i].equals(".")) {
+                System.out.println(parts[i]);
+                result = result + parts[i] + "/";
+            }
+        }
+        String modified = result.substring(0, result.length() - 1);
+        return modified;
         }
     }
