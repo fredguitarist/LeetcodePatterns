@@ -152,4 +152,20 @@ class Solution {
         String modified = result.substring(0, result.length() - 1);
         return modified;
         }
+
+    public int mySqrt(int x) {
+        int squareRoot = (int) Math.sqrt(x); // извлечение квадратного корня
+        return squareRoot;
+        }
+
+    public int searchInsert(int[] nums, int target) { //35
+        int result = -1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                result = i;
+            }
+        }
+        return result;
+
+        }
     }

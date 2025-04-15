@@ -26,7 +26,12 @@ public class Main {
 //        solution.isValidSudoku(sudokuGrid);
 //        solution.removeElement(new int[]{3,2,2,3}, 3);
 //        solution.lengthOfLastWord("a a");
+//        System.out.println(solution.simplifyPath("/home/user/./Documents/../Pictures"));
+//        System.out.println(solution.mySqrt(9));
+//        System.out.println(solution.searchInsert(new int[]{7,8,9}, 9));
+        SolutionArrays solutionArrays = new SolutionArrays();
+//        solutionArrays.moveZeroes(new int[]{0, 2, 0, 7, 0, 11, 15});
+        System.out.println(solutionArrays.searchInsert(new int[]{2, 7, 11, 15, 88}, 16));
 
-        System.out.println(solution.simplifyPath("/home/user/./Documents/../Pictures"));
     }
 }
