@@ -29,9 +29,20 @@ public class Main {
 //        System.out.println(solution.simplifyPath("/home/user/./Documents/../Pictures"));
 //        System.out.println(solution.mySqrt(9));
 //        System.out.println(solution.searchInsert(new int[]{7,8,9}, 9));
-        SolutionArrays solutionArrays = new SolutionArrays();
+        // SolutionArrays solutionArrays = new SolutionArrays();
 //        solutionArrays.moveZeroes(new int[]{0, 2, 0, 7, 0, 11, 15});
-        System.out.println(solutionArrays.searchInsert(new int[]{2, 7, 11, 15, 88}, 16));
+////        System.out.println(solutionArrays.searchInsert(new int[]{2, 7, 11, 15, 88}, 16));
+//        solutionArrays.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
+        SolutionString solutionString = new SolutionString();
+//        System.out.println(solutionString.longestCommonPrefix(new String[]{"flower","flow","flight"}));
+//        solutionString.multiply("123", "456"); //эту дорешать
+//        System.out.println(solutionString.wordPattern("abbc", "dog cat cat dog"));
+//        System.out.println(solutionString.reverseVowels("pidor"));
+//        System.out.println(Arrays.toString(solutionString.plusOne(new int[]{1,2,3})));
+        // SolutionMath solutionMath = new SolutionMath();
+        // System.out.println(solutionMath.isPowerOfFour(4));
+        solutionString.reverseOnlyLetters("pidor-");
+
 
     }
 }

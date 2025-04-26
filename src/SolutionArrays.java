@@ -1,6 +1,10 @@
-import java.util.Arrays;
 
-import static java.util.Arrays.*;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+import java.util.List;
+
+
 
 public class SolutionArrays {
     public void moveZeroes(int[] nums) {
@@ -40,8 +44,22 @@ public class SolutionArrays {
                 right = mid - 1;       // Ищем в левой части
             }
         }
-
         // Если целевое значение не найдено, возвращаем индекс, куда оно должно быть вставлено
         return left;
+    }
+
+    public List<List<Integer>> generate(int numRows) {
+
+        List<List<Integer>> listOfLists = new ArrayList<>();
+        
+        return listOfLists;
+    }
+
+    public List<List<Integer>> threeSum(int[] nums) { //15
+
+        Arrays.sort(nums);
+        List<List<Integer>> listOfLists = new ArrayList<>();
+        System.out.println(Arrays.toString(nums));
+        return listOfLists;
     }
 }
