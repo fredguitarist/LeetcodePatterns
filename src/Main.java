@@ -41,7 +41,9 @@ public class Main {
 //        System.out.println(Arrays.toString(solutionString.plusOne(new int[]{1,2,3})));
         // SolutionMath solutionMath = new SolutionMath();
         // System.out.println(solutionMath.isPowerOfFour(4));
-        solutionString.reverseOnlyLetters("pidor-");
+        // solutionString.reverseOnlyLetters("pidor-");
+        System.out.println(solutionString.lengthOfLongestSubstring("ababc"));
+        
 
 
     }

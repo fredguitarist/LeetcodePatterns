@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class SolutionString {
     public String longestCommonPrefix(String[] strs) { //14
@@ -106,14 +108,34 @@ public class SolutionString {
         }
         System.out.println(builder.toString());
 
-        // for (int i = 0; i < s.length(); i++) {
-        //     char ch = s.charAt(i); // Получаем символ
-        //     if (Character.isLetter(ch)) {
-        //         System.out.println(ch + " — это буква");
-        //     } else {
-        //         System.out.println(ch + " — это не буква");
-        //     }
-        // }
         return s;
+    }
+
+    public int lengthOfLongestSubstring(String s) { //gpt //"ababc"
+        Set<Character> window = new HashSet<>(); 
+        int start = 0, end = 0;
+        int maxLength = 0;
+
+        while (end < s.length()) {
+            char c = s.charAt(end);
+
+            if (!window.contains(c)) {  //
+                // Символ новый — добавляем и расширяем окно
+                window.add(c);
+                maxLength = Math.max(maxLength, end - start + 1); //нахождение большего
+                end++;
+            } else {
+                // Символ уже есть — убираем символ слева и сдвигаем start
+                window.remove(s.charAt(start));
+                start++;
+            }
+        }
+        return maxLength;
+    }
+    //Дана строка s. Найди длину самой длинной подстроки, 
+    // которая содержит не более двух различных символов.
+    public int lengthOfLongestSubstringTwoDistinct(String s) {
+        // реализация здесь
+        return 0;
     }
 }
